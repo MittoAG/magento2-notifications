@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="customer_register_success">
+        <observer name="mitto_notifications_customer_register_success" instance="Mitto\Notifications\Observer\Common"/>
+    </event>
+    <event name="sales_order_place_after">
+        <observer name="mitto_notifications_sales_order_place_after" instance="Mitto\Notifications\Observer\Common"/>
+    </event>
+    <event name="order_cancel_after">
+        <observer name="mitto_notifications_order_cancel_after" instance="Mitto\Notifications\Observer\Common"/>
+    </event>
+    <event name="sales_order_payment_refund">
+        <observer name="mitto_notifications_sales_order_payment_refund" instance="Mitto\Notifications\Observer\Common"/>
+    </event>
+    <event name="sales_order_invoice_pay">
+        <observer name="mitto_notifications_sales_order_invoice_pay" instance="Mitto\Notifications\Observer\Common"/>
+    </event>
+    <event name="sales_order_shipment_register_after">
+        <observer name="mitto_notifications_sales_order_shipment_register_after"
+                  instance="Mitto\Notifications\Observer\Common"/>
+    </event>
+</config>

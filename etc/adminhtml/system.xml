@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="mitto_notifications"
+                 translate="label"
+                 type="text"
+                 sortOrder="10"
+                 showInDefault="1"
+                 showInWebsite="1">
+            <label>Notifications</label>
+            <tab>mitto</tab>
+            <resource>Mitto_Notifications::config</resource>
+            <group id="customer" sortOrder="0" showInDefault="1" showInWebsite="1">
+                <label>Customer Notifications</label>
+                <field id="customer_register_success"
+                       translate="label"
+                       type="select"
+                       sortOrder="10"
+                       showInDefault="1"
+                       showInWebsite="1">
+                    <label>Customer Registration</label>
+                    <source_model>Mitto\Core\Model\Config\Source\Template</source_model>
+                </field>
+                <field id="sales_order_place_after"
+                       translate="label"
+                       type="select"
+                       sortOrder="20"
+                       showInDefault="1"
+                       showInWebsite="1">
+                    <label>Place Order</label>
+                    <source_model>Mitto\Core\Model\Config\Source\Template</source_model>
+                </field>
+                <field id="order_cancel_after"
+                       translate="label"
+                       type="select"
+                       sortOrder="20"
+                       showInDefault="1"
+                       showInWebsite="1">
+                    <label>Order Cancel</label>
+                    <source_model>Mitto\Core\Model\Config\Source\Template</source_model>
+                </field>
+                <field id="sales_order_payment_refund"
+                       translate="label"
+                       type="select"
+                       sortOrder="20"
+                       showInDefault="1"
+                       showInWebsite="1">
+                    <label>Order Refund</label>
+                    <source_model>Mitto\Core\Model\Config\Source\Template</source_model>
+                    <comment>Available objects: payment, creditmemo</comment>
+                </field>
+                <field id="sales_order_invoice_pay"
+                       translate="label"
+                       type="select"
+                       sortOrder="20"
+                       showInDefault="1"
+                       showInWebsite="1">
+                    <label>Order Invoice</label>
+                    <source_model>Mitto\Core\Model\Config\Source\Template</source_model>
+                    <comment>Available objects: invoice</comment>
+                </field>
+                <field id="sales_order_shipment_register_after"
+                       translate="label"
+                       type="select"
+                       sortOrder="60"
+                       showInDefault="1"
+                       showInWebsite="1">
+                    <label>Order Shipment</label>
+                    <source_model>Mitto\Core\Model\Config\Source\Template</source_model>
+                    <comment>Available objects: shipment</comment>
+                </field>
+            </group>
+            <group id="administrator" sortOrder="0" showInDefault="1" showInWebsite="1">
+                <label>Administrator Notifications</label>
+                <field id="customer_register_success"
+                       translate="label"
+                       type="select"
+                       sortOrder="10"
+                       showInDefault="1"
+                       showInWebsite="1">
+                    <label>Customer Registration</label>
+                    <source_model>Mitto\Core\Model\Config\Source\Template</source_model>
+                </field>
+                <field id="sales_order_place_after"
+                       translate="label"
+                       type="select"
+                       sortOrder="20"
+                       showInDefault="1"
+                       showInWebsite="1">
+                    <label>Place Order</label>
+                    <source_model>Mitto\Core\Model\Config\Source\Template</source_model>
+                </field>
+                <field id="order_cancel_after"
+                       translate="label"
+                       type="select"
+                       sortOrder="30"
+                       showInDefault="1"
+                       showInWebsite="1">
+                    <label>Order Cancel</label>
+                    <source_model>Mitto\Core\Model\Config\Source\Template</source_model>
+                </field>
+                <field id="sales_order_payment_refund"
+                       translate="label"
+                       type="select"
+                       sortOrder="40"
+                       showInDefault="1"
+                       showInWebsite="1">
+                    <label>Order Refund</label>
+                    <source_model>Mitto\Core\Model\Config\Source\Template</source_model>
+                    <comment>Available objects: payment, creditmemo</comment>
+                </field>
+                <field id="sales_order_invoice_pay"
+                       translate="label"
+                       type="select"
+                       sortOrder="50"
+                       showInDefault="1"
+                       showInWebsite="1">
+                    <label>Order Invoice</label>
+                    <source_model>Mitto\Core\Model\Config\Source\Template</source_model>
+                    <comment>Available objects: invoice</comment>
+                </field>
+                <field id="sales_order_shipment_register_after"
+                       translate="label"
+                       type="select"
+                       sortOrder="60"
+                       showInDefault="1"
+                       showInWebsite="1">
+                    <label>Order Shipment</label>
+                    <source_model>Mitto\Core\Model\Config\Source\Template</source_model>
+                    <comment>Available objects: shipment</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
